@@ -75,3 +75,51 @@ for (item of arr6) {
   }  
 }
  console.log(min6)
+
+// TASK 7 Существует строка. Показать третий, шестой, девятый и так далее символы.
+
+const text = "Hello,World! How a you?"
+let arr7 = text.split('')
+let res7 = [];
+console.log(arr7)
+for (n in arr7){
+	if(n % 3 == 0){
+		res7 += arr7[n];
+  }  
+}
+console.log(res7)
+
+// TASK 8 Заменить в строке все вхождения 'word' на 'letter'
+
+const text8 = 'Hello,World! write word text.Word.Words,words,hoy,soy,letter-getter-setter, word.';
+let str = text8.replace(/word/g,'letter')
+console.log(str)
+let str2 = str.replace(/Word/g,'letter')
+console.log(str2)
+ 
+// TASK 9 Пользователь вводит время в минутах и расстояние в километрах. Найти скорость в м/c.
+
+let time = Number(prompt('Введите время в минутах'))
+console.log(time)
+let distance = Number(prompt('Введите расстояние в км'))
+ resTime = time / 60;
+ resDistance = distance / 1000;
+ let speed = resDistance /  resTime
+ alert('скорость:'+ speed);
+
+// TASK 10 Проверить массив на пустоту
+
+arr10 = [];
+console.log(arr10.length)
+
+// TASK 11 Удалить первый элемент массива
+
+let arr11 = ['a', 'b', 'c', 'd', 'e'];
+arr11.shift();
+console.log(arr11);
+
+// TASK 12 Удалить последний элемент массива
+
+let arr12 = ['a', 'b', 'c', 'd', 'e'];
+arr12.pop();
+console.log(arr12);
